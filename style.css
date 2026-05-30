@@ -16,15 +16,6 @@ Text Domain: cge-theme
   --cge-focus: #fbb040;
 }
 
-body {
-  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
-  letter-spacing: -0.01em;
-}
-
 a:focus-visible,
 button:focus-visible,
 .wp-block-button__link:focus-visible {
@@ -34,12 +25,13 @@ button:focus-visible,
 
 .wp-block-post-content a,
 .wp-block-post-excerpt a,
-.wp-block-query a {
+.wp-block-query a,
+.wp-block-navigation a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0 2px;
-  transition: color 500ms ease-in-out, background-size 500ms ease-in-out;
+  background-sWhaize: 0 2px;
+  transition: color 200ms ease, background-size 200ms ease;
 }
 
 .wp-block-post-content a:hover,
@@ -47,39 +39,23 @@ button:focus-visible,
 .wp-block-post-excerpt a:hover,
 .wp-block-post-excerpt a:focus-visible,
 .wp-block-query a:hover,
-.wp-block-query a:focus-visible {
+.wp-block-query a:focus-visible,
+.wp-block-navigation a:hover,
+.wp-block-navigation a:focus-visible {
   color: #9b3a99;
   background-size: 100% 2px;
-  transition: color 500ms ease-in-out, background-size 500ms ease-in-out;
 }
 
-.wp-block-navigation a {
+.wp-block-button .wp-block-button__link {
   text-decoration: none;
-  font-weight: 600;
   background-image: none;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
 }
 
-.wp-block-navigation a:hover {
-  text-decoration: underline;
-}
-
-.wp-block-site-title a {
-  text-decoration: none;
-}
-
-.wp-block-button__link {
-  background-color: #4b2050;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  background-image: none;
-  transition: background-color 500ms ease-in-out, color 500ms ease-in-out, transform 500ms ease-in-out, text-decoration 500ms ease-in-out;
-}
-
-.wp-block-button__link:hover,
-.wp-block-button__link:focus-visible {
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus-visible {
   background-color: #5a2a60;
-  color: #f9f7fb;
-  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .editor-styles-wrapper .wp-block-site-logo,

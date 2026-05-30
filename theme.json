@@ -69,7 +69,10 @@
     "elements": {
       "link": {
         "color": { "text": "#9b3a99" },
-        "typography": { "fontWeight": "600" }
+        "typography": {
+          "fontWeight": "600",
+          "textDecoration": "none"
+        }
       },
       "button": {
         "color": {
@@ -78,6 +81,14 @@
         },
         "border": {
           "radius": "999px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.6rem",
+            "right": "1.4rem",
+            "bottom": "0.6rem",
+            "left": "1.4rem"
+          }
         },
         "typography": {
           "fontWeight": "600"
