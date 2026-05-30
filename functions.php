@@ -79,11 +79,3 @@ function cge_theme_filter_block_templates($block_templates, $query, $template_ty
 }
 add_filter('get_block_templates', 'cge_theme_filter_block_templates', 10, 3);
 
-function cge_theme_register_custom_patterns() {
-    $pattern_file = get_template_directory() . '/patterns/fact-stat.php';
-
-    if (function_exists('register_block_pattern_from_metadata') && file_exists($pattern_file)) {
-        register_block_pattern_from_metadata($pattern_file);
-    }
-}
-add_action('init', 'cge_theme_register_custom_patterns');
