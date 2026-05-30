@@ -22,6 +22,10 @@
       "blockGap": true,
       "units": ["px", "rem", "%", "vw"]
     },
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1200px"
+    },
     "typography": {
       "customFontSize": false,
       "fontFamilies": [
@@ -53,6 +57,14 @@
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--plex-sans)",
       "lineHeight": "1.6"
+    },
+    "spacing": {
+      "padding": {
+        "top": "1.5rem",
+        "right": "1.5rem",
+        "bottom": "1.5rem",
+        "left": "1.5rem"
+      }
     },
     "elements": {
       "link": {

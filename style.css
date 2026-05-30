@@ -44,3 +44,9 @@ button:focus-visible,
 .wp-block-site-title a {
   text-decoration: none;
 }
+
+.editor-styles-wrapper .wp-block-site-logo,
+.editor-styles-wrapper .wp-block-site-logo img {
+  width: 48px;
+  height: 48px;
+}
