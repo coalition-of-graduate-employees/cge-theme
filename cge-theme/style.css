@@ -1,0 +1,46 @@
+/*
+Theme Name: CGE 6069 Theme
+Theme URI: https://www.cge6069.org
+Author: CGE 6069
+Description: Custom block theme for CGE 6069 with controlled branding and layouts.
+Version: 0.1.0
+Requires at least: 6.3
+Tested up to: 6.6
+Requires PHP: 8.0
+Text Domain: cge-theme
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&display=swap");
+
+:root {
+  --cge-focus: #fbb040;
+}
+
+body {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+a:focus-visible,
+button:focus-visible,
+.wp-block-button__link:focus-visible {
+  outline: 3px solid var(--cge-focus);
+  outline-offset: 3px;
+}
+
+.wp-block-navigation a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wp-block-navigation a:hover {
+  text-decoration: underline;
+}
+
+.wp-block-site-title a {
+  text-decoration: none;
+}

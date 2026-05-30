@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "palette": [
+        { "name": "Brand Purple", "slug": "brand-purple", "color": "#9b3a99" },
+        { "name": "Deep Purple", "slug": "deep-purple", "color": "#3e173d" },
+        { "name": "Brand Orange", "slug": "brand-orange", "color": "#fbb040" },
+        { "name": "Off White", "slug": "off-white", "color": "#f9f7fb" },
+        { "name": "Charcoal", "slug": "charcoal", "color": "#1c1b1d" },
+        { "name": "Slate", "slug": "slate", "color": "#6e6a70" }
+      ]
+    },
+    "spacing": {
+      "padding": true,
+      "blockGap": true,
+      "units": ["px", "rem", "%", "vw"]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "name": "IBM Plex Sans",
+          "slug": "plex-sans",
+          "fontFamily": "\"IBM Plex Sans\", ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+        },
+        {
+          "name": "Source Serif 4",
+          "slug": "source-serif",
+          "fontFamily": "\"Source Serif 4\", ui-serif, Georgia, \"Times New Roman\", serif"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "slug": "sm", "size": "0.9rem" },
+        { "name": "Base", "slug": "md", "size": "1rem" },
+        { "name": "Large", "slug": "lg", "size": "1.4rem" },
+        { "name": "XL", "slug": "xl", "size": "2.2rem" },
+        { "name": "XXL", "slug": "xxl", "size": "3rem" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#f9f7fb",
+      "text": "#1c1b1d"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--plex-sans)",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "#9b3a99" },
+        "typography": { "fontWeight": "600" }
+      },
+      "button": {
+        "color": {
+          "background": "#3e173d",
+          "text": "#f9f7fb"
+        },
+        "border": {
+          "radius": "999px"
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      }
+    },
+    "blocks": {
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--source-serif)"
+        }
+      },
+      "core/separator": {
+        "color": { "background": "#e6e1ea" }
+      }
+    }
+  }
+}
