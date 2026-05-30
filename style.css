@@ -88,14 +88,23 @@ button:focus-visible,
 .fact-stat__heading {
   position: relative;
   display: inline-block;
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.fact-stat {
+  text-align: center;
+}
+
+.fact-stat__heading,
+.fact-stat p {
+  text-align: center;
 }
 
 .fact-stat__heading::before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0.25rem;
+  bottom: 0.35rem;
   width: 67%;
   height: 2px;
   background-color: #3e173d;
@@ -106,7 +115,7 @@ button:focus-visible,
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 0.2rem;
   width: 33%;
   height: 4px;
   background-color: #6b2e6a;
