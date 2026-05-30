@@ -43,7 +43,10 @@ function cge_theme_is_editing_front_page() {
 
 function cge_theme_hide_front_page_title_in_editor() {
     if (cge_theme_is_editing_front_page()) {
-        $css = '.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper{display:none;}';
+        $css = '.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper,'
+            . '.editor-styles-wrapper .editor-post-title,'
+            . '.editor-styles-wrapper .editor-post-title__block,'
+            . '.editor-styles-wrapper .wp-block-post-title{display:none;}';
         wp_add_inline_style('wp-edit-blocks', $css);
     }
 }
