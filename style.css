@@ -84,3 +84,31 @@ button:focus-visible,
   width: 48px;
   height: 48px;
 }
+
+.fact-stat__heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.fact-stat__heading::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  width: 67%;
+  height: 2px;
+  background-color: #3e173d;
+  transform: translateX(-50%);
+}
+
+.fact-stat__heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 33%;
+  height: 4px;
+  background-color: #6b2e6a;
+  transform: translateX(-50%);
+}
