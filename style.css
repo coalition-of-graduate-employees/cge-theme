@@ -32,18 +32,25 @@ button:focus-visible,
   outline-offset: 3px;
 }
 
-a {
+.wp-block-post-content a,
+.wp-block-post-excerpt a,
+.wp-block-query a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 2px;
-  transition: color 200ms ease, background-size 200ms ease;
+  transition: color 500ms ease-in-out, background-size 500ms ease-in-out;
 }
 
-a:hover,
-a:focus-visible {
+.wp-block-post-content a:hover,
+.wp-block-post-content a:focus-visible,
+.wp-block-post-excerpt a:hover,
+.wp-block-post-excerpt a:focus-visible,
+.wp-block-query a:hover,
+.wp-block-query a:focus-visible {
   color: #9b3a99;
   background-size: 100% 2px;
+  transition: color 500ms ease-in-out, background-size 500ms ease-in-out;
 }
 
 .wp-block-navigation a {
@@ -64,7 +71,8 @@ a:focus-visible {
   background-color: #4b2050;
   text-decoration: underline;
   text-underline-offset: 0.2em;
-  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+  background-image: none;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out, transform 500ms ease-in-out, text-decoration 500ms ease-in-out;
 }
 
 .wp-block-button__link:hover,
