@@ -32,3 +32,12 @@ function cge_theme_hide_front_page_title_in_editor() {
     }
 }
 add_action('enqueue_block_editor_assets', 'cge_theme_hide_front_page_title_in_editor');
+
+function cge_theme_hide_front_page_title_block($block_content, $block) {
+    if (!is_admin() && is_front_page() && isset($block['blockName']) && $block['blockName'] === 'core/post-title') {
+        return '';
+    }
+
+    return $block_content;
+}
+add_filter('render_block', 'cge_theme_hide_front_page_title_block', 10, 2);
