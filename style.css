@@ -32,9 +32,24 @@ button:focus-visible,
   outline-offset: 3px;
 }
 
+a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: color 200ms ease, background-size 200ms ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: #9b3a99;
+  background-size: 100% 2px;
+}
+
 .wp-block-navigation a {
   text-decoration: none;
   font-weight: 600;
+  background-image: none;
 }
 
 .wp-block-navigation a:hover {
@@ -43,6 +58,20 @@ button:focus-visible,
 
 .wp-block-site-title a {
   text-decoration: none;
+}
+
+.wp-block-button__link {
+  background-color: #4b2050;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:focus-visible {
+  background-color: #5a2a60;
+  color: #f9f7fb;
+  transform: translateY(-1px);
 }
 
 .editor-styles-wrapper .wp-block-site-logo,
