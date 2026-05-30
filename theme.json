@@ -96,6 +96,26 @@
       }
     },
     "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#3e173d",
+          "text": "#f9f7fb"
+        },
+        "border": {
+          "radius": "999px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.6rem",
+            "right": "1.4rem",
+            "bottom": "0.6rem",
+            "left": "1.4rem"
+          }
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      },
       "core/group": {
         "spacing": {
           "padding": {
