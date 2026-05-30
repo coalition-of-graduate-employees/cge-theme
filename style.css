@@ -48,6 +48,9 @@ button:focus-visible,
 
 .wp-block-button .wp-block-button__link {
   position: relative;
+  background-image: none;
+  background-size: 0 0;
+  background-repeat: no-repeat;
   transition: background-color 500ms ease-in-out, box-shadow 500ms ease-in-out;
 }
 
