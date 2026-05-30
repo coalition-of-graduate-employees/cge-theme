@@ -6,8 +6,8 @@
  * Description: A fact stat with a heading, separator bar, and subheading.
  */
 ?>
-<!-- wp:group {"className":"fact-stat","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"0.75rem"}},"lock":{"move":false,"remove":false}} -->
-<div class="wp-block-group fact-stat" style="text-align:center">
+<!-- wp:group {"className":"fact-stat","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"0.75rem"}},"textAlign":"center","lock":{"move":false,"remove":false}} -->
+<div class="wp-block-group fact-stat has-text-align-center">
   <!-- wp:heading {"level":2,"placeholder":"Heading","className":"fact-stat__heading"} -->
   <h2 class="fact-stat__heading"></h2>
   <!-- /wp:heading -->

@@ -104,8 +104,8 @@ button:focus-visible,
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0.35rem;
-  width: 67%;
+  bottom: 0.2rem;
+  width: 10rem;
   height: 2px;
   background-color: #3e173d;
   transform: translateX(-50%);
@@ -116,7 +116,7 @@ button:focus-visible,
   position: absolute;
   left: 50%;
   bottom: 0.2rem;
-  width: 33%;
+  width: 5rem;
   height: 4px;
   background-color: #6b2e6a;
   transform: translateX(-50%);
